@@ -1,0 +1,249 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1945.7915 1120.45" width="1945.7915" height="1120.45" style="--bg:#18181B;--fg:#F4F4F5;--line:#71717A;--muted:#A1A1AA;--surface:#27272A;--border:#3F3F46;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="seq-arrow" markerWidth="8" markerHeight="5" refX="8" refY="2.5" orient="auto-start-reverse">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" />
+  </marker>
+  <marker id="seq-arrow-open" markerWidth="8" markerHeight="5" refX="8" refY="2.5" orient="auto-start-reverse">
+    <polyline points="0 0, 8 2.5, 0 5" fill="none" stroke="var(--_arrow)" stroke-width="1" />
+  </marker>
+</defs>
+<line class="lifeline" data-actor="User" x1="281.99800000000005" y1="92.45" x2="281.99800000000005" y2="1090.45" stroke="var(--_line)" stroke-width="0.75" stroke-dasharray="6 4" />
+<line class="lifeline" data-actor="Agent" x1="513.5700000000002" y1="70" x2="513.5700000000002" y2="1090.45" stroke="var(--_line)" stroke-width="0.75" stroke-dasharray="6 4" />
+<line class="lifeline" data-actor="Surface" x1="774.248" y1="70" x2="774.248" y2="1090.45" stroke="var(--_line)" stroke-width="0.75" stroke-dasharray="6 4" />
+<line class="lifeline" data-actor="CP" x1="989.3585" y1="70" x2="989.3585" y2="1090.45" stroke="var(--_line)" stroke-width="0.75" stroke-dasharray="6 4" />
+<line class="lifeline" data-actor="Network" x1="1163.3125" y1="70" x2="1163.3125" y2="1090.45" stroke="var(--_line)" stroke-width="0.75" stroke-dasharray="6 4" />
+<line class="lifeline" data-actor="Merchant" x1="1454.5845000000002" y1="70" x2="1454.5845000000002" y2="1090.45" stroke="var(--_line)" stroke-width="0.75" stroke-dasharray="6 4" />
+<line class="lifeline" data-actor="Processor" x1="1797.2345" y1="70" x2="1797.2345" y2="1090.45" stroke="var(--_line)" stroke-width="0.75" stroke-dasharray="6 4" />
+<g class="block" data-type="rect" data-label="rgb(230, 240, 255)">
+  <rect x="220.56650000000008" y="100.44999999999999" width="663.6484999999999" height="235" rx="0" ry="0" fill="none" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="220.56650000000008" y="100.44999999999999" width="163" height="20" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="228.56650000000008" y="110.44999999999999" font-size="11" font-weight="600" fill="var(--_text-sec)" dy="3.8499999999999996">rect [rgb(230, 240, 255)]</text>
+</g>
+<g class="block" data-type="rect" data-label="rgb(240, 240, 240)">
+  <rect x="387.3010000000001" y="385.45" width="1142.4235" height="180.00000000000006" rx="0" ry="0" fill="none" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="387.3010000000001" y="385.45" width="163" height="20" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="395.3010000000001" y="395.45" font-size="11" font-weight="600" fill="var(--_text-sec)" dy="3.8499999999999996">rect [rgb(240, 240, 240)]</text>
+</g>
+<g class="block" data-type="rect" data-label="rgb(230, 250, 235)">
+  <rect x="387.3010000000001" y="615.45" width="1525.4579999999999" height="455" rx="0" ry="0" fill="none" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="387.3010000000001" y="615.45" width="163" height="20" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="395.3010000000001" y="625.45" font-size="11" font-weight="600" fill="var(--_text-sec)" dy="3.8499999999999996">rect [rgb(230, 250, 235)]</text>
+</g>
+<g class="message" data-from="User" data-to="Agent" data-label="意图对话 (设置预算上限、合规要求)" data-line-style="solid" data-arrow-head="filled" data-self="false" data-step="1">
+  <line x1="281.99800000000005" y1="140.45" x2="513.5700000000002" y2="140.45" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <rect x="291.2840000000001" y="122.29999999999998" width="213" height="16.3" rx="2" ry="2" fill="var(--bg)" />
+  <text x="397.7840000000001" y="130.45" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">意图对话 (设置预算上限、合规要求)</text>
+  <circle class="sequence-number" cx="281.99800000000005" cy="140.45" r="9" fill="var(--_arrow)" stroke="var(--bg)" stroke-width="1" />
+  <text x="281.99800000000005" y="140.45" class="sequence-number-label" font-size="10" text-anchor="middle" font-weight="600" fill="var(--bg)" dy="3.5">1</text>
+</g>
+<g class="message" data-from="Agent" data-to="Surface" data-label="请求授权审批 (Contents, sa_pk)" data-line-style="solid" data-arrow-head="filled" data-self="false" data-step="2">
+  <line x1="513.5700000000002" y1="180.45" x2="774.248" y2="180.45" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <rect x="554.9090000000001" y="162.29999999999998" width="178" height="16.3" rx="2" ry="2" fill="var(--bg)" />
+  <text x="643.9090000000001" y="170.45" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">请求授权审批 (Contents, sa_pk)</text>
+  <circle class="sequence-number" cx="513.5700000000002" cy="180.45" r="9" fill="var(--_arrow)" stroke="var(--bg)" stroke-width="1" />
+  <text x="513.5700000000002" y="180.45" class="sequence-number-label" font-size="10" text-anchor="middle" font-weight="600" fill="var(--bg)" dy="3.5">2</text>
+</g>
+<g class="message" data-from="Surface" data-to="User" data-label="确认授权内容与限额" data-line-style="solid" data-arrow-head="filled" data-self="false" data-step="3">
+  <line x1="774.248" y1="220.45" x2="281.99800000000005" y2="220.45" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <rect x="465.12300000000005" y="202.29999999999998" width="126" height="16.3" rx="2" ry="2" fill="var(--bg)" />
+  <text x="528.123" y="210.45" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">确认授权内容与限额</text>
+  <circle class="sequence-number" cx="774.248" cy="220.45" r="9" fill="var(--_arrow)" stroke="var(--bg)" stroke-width="1" />
+  <text x="774.248" y="220.45" class="sequence-number-label" font-size="10" text-anchor="middle" font-weight="600" fill="var(--bg)" dy="3.5">3</text>
+</g>
+<g class="message" data-from="User" data-to="Surface" data-label="生物认证 / 授权通过" data-line-style="solid" data-arrow-head="filled" data-self="false" data-step="4">
+  <line x1="281.99800000000005" y1="260.45" x2="774.248" y2="260.45" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <rect x="468.12300000000005" y="242.29999999999998" width="120" height="16.3" rx="2" ry="2" fill="var(--bg)" />
+  <text x="528.123" y="250.45" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">生物认证 / 授权通过</text>
+  <circle class="sequence-number" cx="281.99800000000005" cy="260.45" r="9" fill="var(--_arrow)" stroke="var(--bg)" stroke-width="1" />
+  <text x="281.99800000000005" y="260.45" class="sequence-number-label" font-size="10" text-anchor="middle" font-weight="600" fill="var(--bg)" dy="3.5">4</text>
+</g>
+<g class="message" data-from="Surface" data-to="Agent" data-label="交付 [Mandate承诺 C, 匿名凭据, 致盲因子 r]" data-line-style="solid" data-arrow-head="filled" data-self="false" data-step="5">
+  <line x1="774.248" y1="315.45" x2="513.5700000000002" y2="315.45" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <rect x="521.4090000000001" y="297.3" width="245" height="16.3" rx="2" ry="2" fill="var(--bg)" />
+  <text x="643.9090000000001" y="305.45" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">交付 [Mandate承诺 C, 匿名凭据, 致盲因子 r]</text>
+  <circle class="sequence-number" cx="774.248" cy="315.45" r="9" fill="var(--_arrow)" stroke="var(--bg)" stroke-width="1" />
+  <text x="774.248" y="315.45" class="sequence-number-label" font-size="10" text-anchor="middle" font-weight="600" fill="var(--bg)" dy="3.5">5</text>
+</g>
+<g class="message" data-from="Agent" data-to="Merchant" data-label="查询商品目录 (Catalogue)" data-line-style="solid" data-arrow-head="filled" data-self="false" data-step="6">
+  <line x1="513.5700000000002" y1="425.45" x2="1454.5845000000002" y2="425.45" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <rect x="910.5772500000002" y="407.3" width="147" height="16.3" rx="2" ry="2" fill="var(--bg)" />
+  <text x="984.0772500000002" y="415.45" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">查询商品目录 (Catalogue)</text>
+  <circle class="sequence-number" cx="513.5700000000002" cy="425.45" r="9" fill="var(--_arrow)" stroke="var(--bg)" stroke-width="1" />
+  <text x="513.5700000000002" y="425.45" class="sequence-number-label" font-size="10" text-anchor="middle" font-weight="600" fill="var(--bg)" dy="3.5">6</text>
+</g>
+<g class="message" data-from="Merchant" data-to="Agent" data-label="返回目录数据" data-line-style="solid" data-arrow-head="filled" data-self="false" data-step="7">
+  <line x1="1454.5845000000002" y1="465.45" x2="513.5700000000002" y2="465.45" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <rect x="940.5772500000002" y="447.3" width="87" height="16.3" rx="2" ry="2" fill="var(--bg)" />
+  <text x="984.0772500000002" y="455.45" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">返回目录数据</text>
+  <circle class="sequence-number" cx="1454.5845000000002" cy="465.45" r="9" fill="var(--_arrow)" stroke="var(--bg)" stroke-width="1" />
+  <text x="1454.5845000000002" y="465.45" class="sequence-number-label" font-size="10" text-anchor="middle" font-weight="600" fill="var(--bg)" dy="3.5">7</text>
+</g>
+<g class="message" data-from="Agent" data-to="Merchant" data-label="加购商品 &amp; 创建结算单 (Checkout)" data-line-style="solid" data-arrow-head="filled" data-self="false" data-step="8">
+  <line x1="513.5700000000002" y1="505.45" x2="1454.5845000000002" y2="505.45" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <rect x="886.5772500000002" y="487.3" width="195" height="16.3" rx="2" ry="2" fill="var(--bg)" />
+  <text x="984.0772500000002" y="495.45" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">加购商品 &amp; 创建结算单 (Checkout)</text>
+  <circle class="sequence-number" cx="513.5700000000002" cy="505.45" r="9" fill="var(--_arrow)" stroke="var(--bg)" stroke-width="1" />
+  <text x="513.5700000000002" y="505.45" class="sequence-number-label" font-size="10" text-anchor="middle" font-weight="600" fill="var(--bg)" dy="3.5">8</text>
+</g>
+<g class="message" data-from="Merchant" data-to="Agent" data-label="商家签署结算单 (实际结算价: $320)" data-line-style="solid" data-arrow-head="filled" data-self="false" data-step="9">
+  <line x1="1454.5845000000002" y1="545.45" x2="513.5700000000002" y2="545.45" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <rect x="882.0772500000002" y="527.3000000000001" width="204" height="16.3" rx="2" ry="2" fill="var(--bg)" />
+  <text x="984.0772500000002" y="535.45" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">商家签署结算单 (实际结算价: $320)</text>
+  <circle class="sequence-number" cx="1454.5845000000002" cy="545.45" r="9" fill="var(--_arrow)" stroke="var(--bg)" stroke-width="1" />
+  <text x="1454.5845000000002" y="545.45" class="sequence-number-label" font-size="10" text-anchor="middle" font-weight="600" fill="var(--bg)" dy="3.5">9</text>
+</g>
+<g class="message" data-from="Agent" data-to="CP" data-label="提交 [Closed Checkout, π_range, π_auth, Nullifier]" data-line-style="solid" data-arrow-head="filled" data-self="false" data-step="10">
+  <line x1="513.5700000000002" y1="655.45" x2="989.3585" y2="655.45" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <rect x="619.4642500000001" y="637.3000000000001" width="264" height="16.3" rx="2" ry="2" fill="var(--bg)" />
+  <text x="751.4642500000001" y="645.45" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">提交 [Closed Checkout, π_range, π_auth, Nullifier]</text>
+  <circle class="sequence-number" cx="513.5700000000002" cy="655.45" r="9" fill="var(--_arrow)" stroke="var(--bg)" stroke-width="1" />
+  <text x="513.5700000000002" y="655.45" class="sequence-number-label" font-size="10" text-anchor="middle" font-weight="600" fill="var(--bg)" dy="3.5">10</text>
+</g>
+<g class="message" data-from="CP" data-to="Network" data-label="提交匿名支付请求 + 证明" data-line-style="solid" data-arrow-head="filled" data-self="false" data-step="11">
+  <line x1="989.3585" y1="710.45" x2="1163.3125" y2="710.45" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <rect x="1001.8355000000001" y="692.3000000000001" width="149" height="16.3" rx="2" ry="2" fill="var(--bg)" />
+  <text x="1076.3355000000001" y="700.45" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">提交匿名支付请求 + 证明</text>
+  <circle class="sequence-number" cx="989.3585" cy="710.45" r="9" fill="var(--_arrow)" stroke="var(--bg)" stroke-width="1" />
+  <text x="989.3585" y="710.45" class="sequence-number-label" font-size="10" text-anchor="middle" font-weight="600" fill="var(--bg)" dy="3.5">11</text>
+</g>
+<g class="message" data-from="Network" data-to="Network" data-label="验证证明，签发单次防关联 payment_token" data-line-style="solid" data-arrow-head="filled" data-self="true" data-step="12">
+  <polyline points="1163.3125,750.45 1193.3125,750.45 1193.3125,770.45 1163.3125,770.45" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <rect x="1198.3125" y="752.3000000000001" width="245" height="16.3" rx="2" ry="2" fill="var(--bg)" />
+  <text x="1201.3125" y="760.45" font-size="11" text-anchor="start" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">验证证明，签发单次防关联 payment_token</text>
+  <circle class="sequence-number" cx="1163.3125" cy="750.45" r="9" fill="var(--_arrow)" stroke="var(--bg)" stroke-width="1" />
+  <text x="1163.3125" y="750.45" class="sequence-number-label" font-size="10" text-anchor="middle" font-weight="600" fill="var(--bg)" dy="3.5">12</text>
+</g>
+<g class="message" data-from="Network" data-to="CP" data-label="返回 payment_token" data-line-style="solid" data-arrow-head="filled" data-self="false" data-step="13">
+  <line x1="1163.3125" y1="820.45" x2="989.3585" y2="820.45" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <rect x="1018.8355000000001" y="802.3000000000001" width="115" height="16.3" rx="2" ry="2" fill="var(--bg)" />
+  <text x="1076.3355000000001" y="810.45" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">返回 payment_token</text>
+  <circle class="sequence-number" cx="1163.3125" cy="820.45" r="9" fill="var(--_arrow)" stroke="var(--bg)" stroke-width="1" />
+  <text x="1163.3125" y="820.45" class="sequence-number-label" font-size="10" text-anchor="middle" font-weight="600" fill="var(--bg)" dy="3.5">13</text>
+</g>
+<g class="message" data-from="CP" data-to="Agent" data-label="返回 payment_token" data-line-style="solid" data-arrow-head="filled" data-self="false" data-step="14">
+  <line x1="989.3585" y1="860.45" x2="513.5700000000002" y2="860.45" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <rect x="693.9642500000001" y="842.3000000000001" width="115" height="16.3" rx="2" ry="2" fill="var(--bg)" />
+  <text x="751.4642500000001" y="850.45" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">返回 payment_token</text>
+  <circle class="sequence-number" cx="989.3585" cy="860.45" r="9" fill="var(--_arrow)" stroke="var(--bg)" stroke-width="1" />
+  <text x="989.3585" y="860.45" class="sequence-number-label" font-size="10" text-anchor="middle" font-weight="600" fill="var(--bg)" dy="3.5">14</text>
+</g>
+<g class="message" data-from="Agent" data-to="Merchant" data-label="提交结账请求 [Checkout, payment_token, π_range, π_kyc]" data-line-style="solid" data-arrow-head="filled" data-self="false" data-step="15">
+  <line x1="513.5700000000002" y1="900.45" x2="1454.5845000000002" y2="900.45" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <rect x="827.0772500000002" y="882.3000000000001" width="314" height="16.3" rx="2" ry="2" fill="var(--bg)" />
+  <text x="984.0772500000002" y="890.45" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">提交结账请求 [Checkout, payment_token, π_range, π_kyc]</text>
+  <circle class="sequence-number" cx="513.5700000000002" cy="900.45" r="9" fill="var(--_arrow)" stroke="var(--bg)" stroke-width="1" />
+  <text x="513.5700000000002" y="900.45" class="sequence-number-label" font-size="10" text-anchor="middle" font-weight="600" fill="var(--bg)" dy="3.5">15</text>
+</g>
+<g class="message" data-from="Merchant" data-to="Processor" data-label="发起最终扣款 [payment_token, hash(Checkout), ZK 聚合证明]" data-line-style="solid" data-arrow-head="filled" data-self="false" data-step="16">
+  <line x1="1454.5845000000002" y1="955.45" x2="1797.2345" y2="955.45" stroke="var(--_line)" stroke-width="1" marker-end="url(#seq-arrow)" />
+  <rect x="1458.4095000000002" y="937.3000000000001" width="335" height="16.3" rx="2" ry="2" fill="var(--bg)" />
+  <text x="1625.9095000000002" y="945.45" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">发起最终扣款 [payment_token, hash(Checkout), ZK 聚合证明]</text>
+  <circle class="sequence-number" cx="1454.5845000000002" cy="955.45" r="9" fill="var(--_arrow)" stroke="var(--bg)" stroke-width="1" />
+  <text x="1454.5845000000002" y="955.45" class="sequence-number-label" font-size="10" text-anchor="middle" font-weight="600" fill="var(--bg)" dy="3.5">16</text>
+</g>
+<g class="message" data-from="Processor" data-to="Merchant" data-label="返回签名后的支付凭单 (Payment Receipt)" data-line-style="dashed" data-arrow-head="filled" data-self="false" data-step="17">
+  <line x1="1797.2345" y1="1010.45" x2="1454.5845000000002" y2="1010.45" stroke="var(--_line)" stroke-width="1" stroke-dasharray="6 4" marker-end="url(#seq-arrow)" />
+  <rect x="1509.4095000000002" y="992.3000000000001" width="233" height="16.3" rx="2" ry="2" fill="var(--bg)" />
+  <text x="1625.9095000000002" y="1000.45" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">返回签名后的支付凭单 (Payment Receipt)</text>
+  <circle class="sequence-number" cx="1797.2345" cy="1010.45" r="9" fill="var(--_arrow)" stroke="var(--bg)" stroke-width="1" />
+  <text x="1797.2345" y="1010.45" class="sequence-number-label" font-size="10" text-anchor="middle" font-weight="600" fill="var(--bg)" dy="3.5">17</text>
+</g>
+<g class="message" data-from="Merchant" data-to="Agent" data-label="返回签名后的结账小票 (Checkout Receipt)" data-line-style="dashed" data-arrow-head="filled" data-self="false" data-step="18">
+  <line x1="1454.5845000000002" y1="1050.45" x2="513.5700000000002" y2="1050.45" stroke="var(--_line)" stroke-width="1" stroke-dasharray="6 4" marker-end="url(#seq-arrow)" />
+  <rect x="865.0772500000002" y="1032.3" width="238" height="16.3" rx="2" ry="2" fill="var(--bg)" />
+  <text x="984.0772500000002" y="1040.45" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">返回签名后的结账小票 (Checkout Receipt)</text>
+  <circle class="sequence-number" cx="1454.5845000000002" cy="1050.45" r="9" fill="var(--_arrow)" stroke="var(--bg)" stroke-width="1" />
+  <text x="1454.5845000000002" y="1050.45" class="sequence-number-label" font-size="10" text-anchor="middle" font-weight="600" fill="var(--bg)" dy="3.5">18</text>
+</g>
+<g class="note" data-position="over" data-actors="Surface">
+  <polygon points="478.679,268.45 1063.817,268.45 1069.817,274.45 1069.817,291.45 478.679,291.45" fill="var(--bg)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <polygon points="1063.817,268.45 1069.817,274.45 1063.817,274.45" fill="var(--_inner-stroke)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="774.248" y="279.95" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)"><tspan x="774.248" dy="-3.3000000000000007">1. 隐藏真实预算：生成密码学承诺 C = Commit(Budget, r)</tspan><tspan x="774.248" dy="14.3">2. 生成匿名凭据 (zk-KYC，如证明满21岁但隐藏真实生日)</tspan></text>
+</g>
+<g class="note" data-position="over" data-actors="Agent">
+  <polygon points="375.41100000000006,323.45 645.729,323.45 651.729,329.45 651.729,346.45 375.41100000000006,346.45" fill="var(--bg)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <polygon points="645.729,323.45 651.729,329.45 645.729,329.45" fill="var(--_inner-stroke)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="513.57" y="334.95" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">仅存储承诺与 Witness 数据 (无任何真实身份明文)</text>
+</g>
+<g class="note" data-position="over" data-actors="User,Processor">
+  <polygon points="867.59925,350.45 1205.6332499999999,350.45 1211.6332499999999,356.45 1211.6332499999999,373.45 867.59925,373.45" fill="var(--bg)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <polygon points="1205.6332499999999,350.45 1211.6332499999999,356.45 1205.6332499999999,356.45" fill="var(--_inner-stroke)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1039.61625" y="361.95" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">阶段二：User Leaves Session (用户离线，Agent 自主寻找商品)</text>
+</g>
+<g class="note" data-position="over" data-actors="User,Processor">
+  <polygon points="891.95325,553.45 1181.27925,553.45 1187.27925,559.45 1187.27925,576.45 891.95325,576.45" fill="var(--bg)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <polygon points="1181.27925,553.45 1187.27925,559.45 1181.27925,559.45" fill="var(--_inner-stroke)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1039.61625" y="564.95" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">阶段三：Start Payment Journey (ZKP 履约与隐私结算)</text>
+</g>
+<g class="note" data-position="over" data-actors="Agent">
+  <polygon points="30,580.45 991.1400000000002,580.45 997.1400000000002,586.45 997.1400000000002,603.45 30,603.45" fill="var(--bg)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <polygon points="991.1400000000002,580.45 997.1400000000002,586.45 991.1400000000002,586.45" fill="var(--_inner-stroke)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="513.5700000000002" y="591.95" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)"><tspan x="513.5700000000002" dy="-17.6">本地生成零知识证明：</tspan><tspan x="513.5700000000002" dy="14.3">1. 范围证明 π_range: 证明 320 &lt;= 预算上限 (不暴露真实上限)</tspan><tspan x="513.5700000000002" dy="14.3">2. 授权证明 π_auth: 证明持有合法委派契约</tspan><tspan x="513.5700000000002" dy="14.3">3. 产生单次交易作废原语 Nullifier (防止跨商家串通与双花)</tspan></text>
+</g>
+<g class="note" data-position="over" data-actors="CP">
+  <polygon points="761.5055,663.45 1211.2115000000001,663.45 1217.2115000000001,669.45 1217.2115000000001,686.45 761.5055,686.45" fill="var(--bg)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <polygon points="1211.2115000000001,663.45 1217.2115000000001,669.45 1211.2115000000001,669.45" fill="var(--_inner-stroke)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="989.3585" y="674.95" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)"><tspan x="989.3585" dy="-3.3000000000000007">验证 π_range 与 π_auth，记录 Nullifier (防双花)</tspan><tspan x="989.3585" dy="14.3">CP 无需知道用户的真实身份与总预算</tspan></text>
+</g>
+<g class="note" data-position="over" data-actors="Merchant">
+  <polygon points="1190.7945000000002,908.45 1712.3745000000001,908.45 1718.3745000000001,914.45 1718.3745000000001,931.45 1190.7945000000002,931.45" fill="var(--bg)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <polygon points="1712.3745000000001,908.45 1718.3745000000001,914.45 1712.3745000000001,914.45" fill="var(--_inner-stroke)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1454.5845000000002" y="919.95" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)"><tspan x="1454.5845000000002" dy="-3.3000000000000007">验证 π_range (确信未超限，防止恶意拒付)</tspan><tspan x="1454.5845000000002" dy="14.3">验证 π_kyc (确信买家资质合规，但不知真实姓名/生日)</tspan></text>
+</g>
+<g class="note" data-position="over" data-actors="Processor">
+  <polygon points="1678.6775,963.45 1909.7915,963.45 1915.7915,969.45 1915.7915,986.45 1678.6775,986.45" fill="var(--bg)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <polygon points="1909.7915,963.45 1915.7915,969.45 1909.7915,969.45" fill="var(--_inner-stroke)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1797.2345" y="974.95" font-size="11" text-anchor="middle" font-weight="400" fill="var(--_text-muted)" dy="3.8499999999999996">批量核验 ZK 证明与 payment_token 有效性</text>
+</g>
+<g class="actor" data-id="User" data-label="User (用户)" data-type="actor">
+  <g transform="translate(263.99800000000005,32) scale(1.5)">
+    <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" fill="none" stroke="var(--_line)" stroke-width="0.6666666666666666" />
+    <path d="M15 10C15 11.6569 13.6569 13 12 13C10.3431 13 9 11.6569 9 10C9 8.34315 10.3431 7 12 7C13.6569 7 15 8.34315 15 10Z" fill="none" stroke="var(--_line)" stroke-width="0.6666666666666666" />
+    <path d="M5.62842 18.3563C7.08963 17.0398 9.39997 16 12 16C14.6 16 16.9104 17.0398 18.3716 18.3563" fill="none" stroke="var(--_line)" stroke-width="0.6666666666666666" />
+  </g>
+  <text x="281.99800000000005" y="84" font-size="13" text-anchor="middle" font-weight="500" fill="var(--_text)" dy="4.55">User (用户)</text>
+</g>
+<g class="actor" data-id="Agent" data-label="Shopping Agent (具备 ZK 证明端)" data-type="participant">
+  <rect x="397.30100000000016" y="30" width="232.53799999999998" height="40" rx="4" ry="4" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="513.5700000000002" y="50" font-size="13" text-anchor="middle" font-weight="500" fill="var(--_text)" dy="4.55">Shopping Agent (具备 ZK 证明端)</text>
+</g>
+<g class="actor" data-id="Surface" data-label="Trusted Surface (安全终端)" data-type="participant">
+  <rect x="674.2810000000001" y="30" width="199.934" height="40" rx="4" ry="4" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="774.248" y="50" font-size="13" text-anchor="middle" font-weight="500" fill="var(--_text)" dy="4.55">Trusted Surface (安全终端)</text>
+</g>
+<g class="actor" data-id="CP" data-label="Credential Provider" data-type="participant">
+  <rect x="914.215" y="30" width="150.287" height="40" rx="4" ry="4" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="989.3585" y="50" font-size="13" text-anchor="middle" font-weight="500" fill="var(--_text)" dy="4.55">Credential Provider</text>
+</g>
+<g class="actor" data-id="Network" data-label="Network" data-type="participant">
+  <rect x="1121.8845000000001" y="30" width="82.856" height="40" rx="4" ry="4" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="1163.3125" y="50" font-size="13" text-anchor="middle" font-weight="500" fill="var(--_text)" dy="4.55">Network</text>
+</g>
+<g class="actor" data-id="Merchant" data-label="Merchant (商家)" data-type="participant">
+  <rect x="1389.4445" y="30" width="130.28" height="40" rx="4" ry="4" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="1454.5845000000002" y="50" font-size="13" text-anchor="middle" font-weight="500" fill="var(--_text)" dy="4.55">Merchant (商家)</text>
+</g>
+<g class="actor" data-id="Processor" data-label="Merchant Payment Processor" data-type="participant">
+  <rect x="1691.71" y="30" width="211.049" height="40" rx="4" ry="4" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="1797.2345" y="50" font-size="13" text-anchor="middle" font-weight="500" fill="var(--_text)" dy="4.55">Merchant Payment Processor</text>
+</g>
+</svg>
